@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_3432577_mjqjbcrmtv9.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .body {
+            background-color: #f5f5f5;
+        }
+
+        .navigation {
+            width: 1226px;
+            height: 30px;
+            margin: 20px auto;
+            /* background-color: pink; */
+        }
+
+        .navigation h3 {
+            float: left;
+            line-height: 30px;
+            font-size: 18px;
+            font-weight: normal;
+        }
+
+        .navigation span {
+            float: right;
+            line-height: 30px;
+        }
+
+        .ipone {
+            width: 1226px;
+            height: 614px;
+            margin: 0 auto;
+            /* background-color: blueviolet; */
+        }
+
+        .ipone>img {
+            width: 234px;
+            height: 614px;
+            float: left;
+        }
+
+        .ipone-right {
+            width: 992px;
+            height: 614px;
+            float: left;
+        }
+
+        .ipone-right li {
+            float: left;
+            width: 234px;
+            height: 260px;
+            text-align: center;
+            border-left: 14px solid #f5f5f5;
+            border-bottom: 14px solid #f5f5f5;
+            transition: all 1s;
+        }
+       .ipone-right li:hover {
+           transform: translateY(-15px);
+       }
+        .ipone-right li img {
+            width: 160px;
+            height: 160px;
+            padding-top: 10px;
+        }
+
+        .title {
+            font-size: 14px;
+            color: #333;
+            margin: 0 10px 2px;
+        }
+
+        .desc {
+            font-size: 12px;
+            color: #b0b0b0;
+        }
+        .price {
+            margin-top: 10px;
+            color: #ff6700;
+        }
+        /* 智能穿戴的样式 */
+       .ipone-right .browseMore {
+            display: flex;
+            width: 234px;
+            height: 134px;
+            /* background-color: #ff6700; */
+            justify-content:space-around ;
+            align-items: center;
+        }
+        .browseMore .more {
+            width: 94px;
+            height: 45px;
+        }
+        .browseMore .more h3 {
+            font-weight: normal;
+        }
+        .browseMore .more p{
+            margin-top: 5px;
+            margin-left: -51px;
+            font-size: 12px;
+        }
+        .icon-youjiantou {
+            font-size: 48px;
+            color: #ff6700;
+        }
+        /* 显示器模块的书写 */
+        .monitor {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 234px;
+            height: 143px;
+            border-bottom: 14px solid #f5f5f5;
+            box-sizing: border-box;
+            /* background-color: pink; */
+        }
+        .monitor .monitor-bottom {
+            width: 100px;
+            height: 66px;
+        }
+        .monitor-bottom p:nth-of-type(1){
+           float: left;
+        }
+        .monitor-bottom p:nth-of-type(2){
+           float: left;
+           margin: 3px 0;
+        }
+        .monitor-bottom p:nth-of-type(3){
+            margin-top: 5px;
+           float: left;
+           color: #ff6700;
+        }
+        /* 路由器里面盒子的写法 */
+        .moniterMore{
+            display: flex;
+            width: 234px;
+            height: 134px; 
+            /* background-color: #ff6700; */
+            justify-content:space-around ;
+            align-items: center;
+        }
+        .moniterMore .more h3 {
+            font-weight: normal;
+        }
+        .moniterMore .more p{
+            margin-top: 5px;
+            margin-left: -51px;
+            font-size: 12px;
+        }
+         #computer-right {
+            width: 80px;
+            height: 80px;
+        }
+        .ipong .television {
+            width: 234px;
+            height: 300px;
+            display: block;
+        }
+        .ipong .wash {
+            width: 234px;
+            height: 300px;
+            display: block;
+        }
+        /* 左侧盒子的书写 */
+        .ipone-left {
+            float: left;
+            width: 234px;
+            height: 614px;
+            
+        }
+        .ipone-left>img {
+            width: 234px;
+            height: 274px;
+        }
+        .ipone-left img:nth-of-type(1){
+            border-bottom: 14px solid #f5f5f5;
+            box-sizing: border-box;
+        }
+        /* 家具底部图片的描写 */
+        .live-bottomPicture {
+            width: 1226px;
+            margin: 15px auto;
+        }
+        .live-bottomPicture img {
+            width: 1226px;
+            height: 130px;
+        }
+        /* 中性笔 */
+        .pen {
+            width: 1226px;
+            height: 120px;
+            margin: 0 auto ;
+        }
+        .pen>img {
+            width: 1226px;
+            height: 120px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航语的书写 -->
+    <div class="navigation">
+        <h3>手机</h3>
+        <span>查看更多</span>
+    </div>
+    <!-- 小米手机模块的书写 -->
+    <div class="ipone">
+        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ac5cafc68c10ce4471869d378f594b52.png?thumb=1&w=293&h=768&f=webp&q=90"
+            alt="">
+        <ul class="ipone-right">
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+        </ul>
+    </div>
+    <!-- 智能穿戴的书写 -->
+    <div class="navigation">
+        <h3>手机</h3>
+        <span>查看更多</span>
+    </div>
+    <!-- watch的书写模块的书写 -->
+    <div class="ipone">
+        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9895c56a7b792fb9053e3085fc261072.jpg?thumb=1&w=293&h=768&f=webp&q=90"
+            alt="">
+        <ul class="ipone-right">
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li class="browseMore">
+                <div class="more">
+                    <h3>浏览更多</h3>
+                    <p>热门</p>
+                </div>
+                <div class="iconfont  icon-youjiantou"></div>
+            </li>
+        </ul>
+    </div>
+       <!-- 笔记本平板内容的书写 -->
+        <!-- 导航语的书写 -->
+    <div class="navigation">
+        <h3>笔记本|平板</h3>
+        <span>热门</span>
+    </div>
+    <!-- 笔记本内容的书写 -->
+    <div class="ipone">
+        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e9896934bb657c3dd0c548952eb27481.jpg?thumb=1&w=293&h=768&f=webp&q=90"
+            alt="">
+        <ul class="ipone-right">
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                 <div class="monitor">
+                     <div class="monitor-bottom">
+                         <p>Redmi显示器</p>                         
+                         <p>23.8英寸</p>                         
+                         <p>599元</p>                         
+                     </div>
+                     <img id="computer-right" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7c37478d8b3b553ba0a50adaec2fc775.png?thumb=1&w=125&h=125&f=webp&q=90" alt="">
+                 </div>
+
+                 <div class="moniterMore">
+                     <!-- 左侧 -->
+                 <div class="more" >
+                    <h3>浏览更多</h3>
+                    <p>热门</p>
+                </div>
+                <!-- 右侧 -->
+                <div class="iconfont  icon-youjiantou"></div>
+            </div>
+            </li>
+        </ul>
+    </div>
+    <!-- 开始写家电 -->
+    <div class="navigation">
+        <h3>家电</h3>
+        <span>热门</span>
+        <span>电视影音</span>
+    </div>
+    <!-- 笔记本内容的书写 -->
+    <div class="ipone">
+        <div class="ipone-left">
+            <img class="television" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3d47879ec183e25a36e67e0219636e60.jpg?thumb=1&w=293&h=375&f=webp&q=90" alt="">
+            <img  class="wash" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/229bbaccda43f32f464c0a810b800106.jpg?thumb=1&w=293&h=375&f=webp&q=90" alt="">
+        </div>
+        <ul class="ipone-right">
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                 <div class="monitor">
+                     <div class="monitor-bottom">
+                         <p>米家全自动波</p>                         
+                         <p>轮洗衣机8kg</p>                         
+                         <p>799元</p>                         
+                     </div>
+                     <img id="computer-right" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b649a329983ad590fde607472f73e55a.jpg?thumb=1&w=125&h=125&f=webp&q=90" alt="">
+                 </div>
+
+                 <div class="moniterMore">
+                     <!-- 左侧 -->
+                 <div class="more" >
+                    <h3>浏览更多</h3>
+                    <p>热门</p>
+                </div>
+                <!-- 右侧 -->
+                <div class="iconfont  icon-youjiantou"></div>
+            </div>
+            </li>
+        </ul>
+    </div>
+          <!-- 生活电器的书写 -->
+          <!-- 开始写家电 -->
+    <div class="navigation">
+        <h3>家电</h3>
+        <span>扫地机</span>
+        <span>空净</span>
+        <span>清洁</span>
+        <span>风扇</span>
+    </div>
+    <!-- 笔记本内容的书写 -->
+    <div class="ipone">
+        <div class="ipone-left">
+            <img class="television" src=https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/37973c4bedc27bae38e1b1758ed4b318.png?thumb=1&w=293&h=375&f=webp&q=90 alt="">
+            <img  class="wash" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d51103fe64d90aca747a6d753beae293.jpeg?thumb=1&w=293&h=375&f=webp&q=90" alt="">
+        </div>
+        <ul class="ipone-right">
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                 <div class="monitor">
+                     <div class="monitor-bottom">
+                         <p>米家空气净化</p>                         
+                         <p>器44444444</p>                         
+                         <p>879元</p>                         
+                     </div>
+                     <img id="computer-right" src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b649a329983ad590fde607472f73e55a.jpg?thumb=1&w=125&h=125&f=webp&q=90" alt="">
+                 </div>
+
+                 <div class="moniterMore">
+                     <!-- 左侧 -->
+                 <div class="more" >
+                    <h3>浏览更多</h3>
+                    <p>空净</p>
+                </div>
+                <!-- 右侧 -->
+                <div class="iconfont  icon-youjiantou"></div>
+            </div>
+            </li>
+        </ul>
+    </div>
+     <!-- 米家养生壶 -->
+     <div class="live-bottomPicture">
+         <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/01cc6a570d32a2ee09a2d5c2009a9968.jpg?thumb=1&w=1533&h=150&f=webp&q=90" alt="">
+     </div>
+     <!-- 厨房电器的书写 -->
+     <div class="navigation">
+        <h3>家电</h3>
+        <span>扫地机</span>
+        <span>空净</span>
+        <span>清洁</span>
+        <span>风扇</span>
+    </div>
+    <!-- 笔记本内容的书写 -->
+    <div class="ipone">
+        <div class="ipone-left">
+            <img class="television" src=https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d0a92bc19df74c4da59563206321320a.jpg?thumb=1&w=293&h=375&f=webp&q=90 alt="">
+            <img  class="wash" src= https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/00c61477413eb05a67b1ec032a148121.png?thumb=1&w=293&h=375&f=webp&q=90 alt="">
+        </div>
+        <ul class="ipone-right">
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                 <div class="monitor">
+                     <div class="monitor-bottom">
+                         <p>米家智能压力</p>                         
+                         <p>IH电饭煲1S3L</p>                         
+                         <p>869元</p>                         
+                     </div>
+                     <img id="computer-right" src=https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/07390d2d89220f2e3f06710360ec1077.jpg?thumb=1&w=125&h=125&f=webp&q=90 alt="">
+                 </div>
+
+                 <div class="moniterMore">
+                     <!-- 左侧 -->
+                 <div class="more" >
+                    <h3>浏览更多</h3>
+                    <p>空净</p>
+                </div>
+                <!-- 右侧 -->
+                <div class="iconfont  icon-youjiantou"></div>
+            </div>
+            </li>
+        </ul>
+    </div>
+    <!-- 智能家居 -->
+    <div class="navigation">
+        <h3>家电</h3>
+        <span>扫地机</span>
+        <span>空净</span>
+        <span>清洁</span>
+        <span>风扇</span>
+    </div>
+    <div class="ipone">
+        <div class="ipone-left">
+            <img class="television" src= https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ec383d223d9f38f442268df684c526f6.png?thumb=1&w=293&h=375&f=webp&q=90 alt="">
+            <img  class="wash" src= https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/bb9761c5b49e21b4d5aa03e7ddaf1a09.png?thumb=1&w=293&h=375&f=webp&q=90 alt="">
+        </div>
+        <ul class="ipone-right">
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                 <div class="monitor">
+                     <div class="monitor-bottom">
+                         <p>小米小爱音箱</p>                         
+                         <p></p>                         
+                         <p>869元</p>                         
+                     </div>
+                     <img id="computer-right" src=https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/07390d2d89220f2e3f06710360ec1077.jpg?thumb=1&w=125&h=125&f=webp&q=90 alt="">
+                 </div>
+
+                 <div class="moniterMore">
+                     <!-- 左侧 -->
+                 <div class="more" >
+                    <h3>浏览更多</h3>
+                    <p>小爱音箱</p>
+                </div>
+                <!-- 右侧 -->
+                <div class="iconfont  icon-youjiantou"></div>
+            </div>
+            </li>
+        </ul>
+    </div>
+     <!-- 运动出行 -->
+     <div class="navigation">
+        <h3>家电</h3>
+        <span>扫地机</span>
+        <span>空净</span>
+        <span>清洁</span>
+        <span>风扇</span>
+    </div>
+    <div class="ipone">
+        <div class="ipone-left">
+            <img class="television" src= https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/84fef78042e4056ea589474196780d4e.jpg?thumb=1&w=293&h=375&f=webp&q=90 alt="">
+            <img  class="wash" src= https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ecce1c0d981037e58cfa281a06122249.jpg?thumb=1&w=293&h=375&f=webp&q=90 alt="">
+        </div>
+        <ul class="ipone-right">
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li>
+                <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                    alt="">
+                <p class="title">
+                    Redmi Note 11T Pro+
+                </p>
+                <p class="desc">天玑8100｜真旗舰芯</p>
+                <p class="price">1999元</p>
+            </li>
+            <li class="browseMore">
+                <div class="more">
+                    <h3>浏览更多</h3>
+                    <p>平衡车/滑板车</p>
+                </div>
+                <div class="iconfont  icon-youjiantou"></div>
+            </li>
+        </ul>
+    </div>
+   <!-- 中性笔的书写 -->
+   <div class="pen">
+       <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/88e35cffc82cd98cd53172460067af17.jpg?thumb=1&w=1533&h=150&f=webp&q=90" alt="">
+   </div>
+   <!-- 日用百货的书写 -->
+   <div class="navigation">
+    <h3>家电</h3>
+    <span>扫地机</span>
+    <span>空净</span>
+    <span>清洁</span>
+    <span>风扇</span>
+</div>
+<div class="ipone">
+    <div class="ipone-left">
+        <img class="television" src=https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c5769bd53177a9301113f799fdc8511d.jpg?thumb=1&w=293&h=375&f=webp&q=90 alt="">
+        <img  class="wash" src= https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/65950f83f429f2a05125bea297d8df6b.jpg?thumb=1&w=293&h=375&f=webp&q=90 alt="">
+    </div>
+    <ul class="ipone-right">
+        <li>
+            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                alt="">
+            <p class="title">
+                Redmi Note 11T Pro+
+            </p>
+            <p class="desc">天玑8100｜真旗舰芯</p>
+            <p class="price">1999元</p>
+        </li>
+        <li>
+            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                alt="">
+            <p class="title">
+                Redmi Note 11T Pro+
+            </p>
+            <p class="desc">天玑8100｜真旗舰芯</p>
+            <p class="price">1999元</p>
+        </li>
+        <li>
+            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                alt="">
+            <p class="title">
+                Redmi Note 11T Pro+
+            </p>
+            <p class="desc">天玑8100｜真旗舰芯</p>
+            <p class="price">1999元</p>
+        </li>
+        <li>
+            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                alt="">
+            <p class="title">
+                Redmi Note 11T Pro+
+            </p>
+            <p class="desc">天玑8100｜真旗舰芯</p>
+            <p class="price">1999元</p>
+        </li>
+        <li>
+            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                alt="">
+            <p class="title">
+                Redmi Note 11T Pro+
+            </p>
+            <p class="desc">天玑8100｜真旗舰芯</p>
+            <p class="price">1999元</p>
+        </li>
+        <li>
+            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                alt="">
+            <p class="title">
+                Redmi Note 11T Pro+
+            </p>
+            <p class="desc">天玑8100｜真旗舰芯</p>
+            <p class="price">1999元</p>
+        </li>
+        <li>
+            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+                alt="">
+            <p class="title">
+                Redmi Note 11T Pro+
+            </p>
+            <p class="desc">天玑8100｜真旗舰芯</p>
+            <p class="price">1999元</p>
+        </li>
+        <li>
+             <div class="monitor">
+                 <div class="monitor-bottom">
+                     <p>小米车载充电</p>                         
+                     <p>器快充版1A1C</p>100W                         
+                     <p>99元</p>                         
+                 </div>
+                 <img id="computer-right" src=https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fffc0a962387dff2f70aeb009ddf69ff.jpg?thumb=1&w=125&h=125&f=webp&q=90 alt="">
+             </div>
+
+             <div class="moniterMore">
+                 <!-- 左侧 -->
+             <div class="more" >
+                <h3>浏览更多</h3>
+                <p>小爱音箱</p>
+            </div>
+            <!-- 右侧 -->
+            <div class="iconfont  icon-youjiantou"></div>
+        </div>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

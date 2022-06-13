@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      width: 200px;
+      height: 300px;
+      /* 默认  从上往下 */
+      /* background-image: linear-gradient(red, green); */
+      /* 从下往上 to{到...去}*/
+      background-image: linear-gradient(to top, red, green);
+      background: linear-gradient(to right, red, blue);
+      background: linear-gradient(to left, red, blue);
+      background: linear-gradient(45deg, red, blue);
+
+
+      /* 从第30像素是黑色，然后30像素到60像素是黑变红，60到100是红变绿，剩余的空间复制很多份*/
+      /* 重复线性渐变 */
+      background-image: repeating-linear-gradient(#252220 30px, #E94057 60px, #27e056 100px);
+    }
+    .box {
+      margin:0 auto;
+      width: 200px;
+      height: 200px;
+      animation-name: zara;
+      animation: duration 2s;
+      background-image: repeating-linear-gradient(#252220 30px, #E94057 60px, #27e056 100px);
+     
+    }
+    @keyframes zara {
+      0% { background-color: #252220;}
+      100%{
+        background-color: white;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div></div>
+  <div class="box"></div>
+</body>
+
+</html>

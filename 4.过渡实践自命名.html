@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    p {
+      width: 200px;
+      height: 20px;
+    }
+
+    div {
+      width:300px;
+      height: 0px;
+      overflow: hidden;
+      text-align: center;
+      transition: all 3s;
+    }
+
+    div>img {
+      width: 90px;
+      height: 90px;
+      border: 10px solid salmon;
+      padding: 10px;
+    }
+
+    p:hover+div{
+       height: 200px;
+      /* background-color: blueviolet; */
+    }
+  </style>
+</head>
+
+<body>
+  <p class="down">下载app</p>
+  <div>
+    <img src="./Imgage/download.png" alt="">
+    <span>小米商城app</span>
+  </div>
+</body>
+
+</html>

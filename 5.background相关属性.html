@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      width: 800px;
+      height: 600px;
+      border: 10px solid lightblue;
+      background-color: lightcoral;
+      /* 背景图 */
+      background-image: url(./Imgage/twitter-logo-transparent-15.png);
+      /* 1.背景图比容器小，会水平加垂直方向平铺整个容器 */
+      /* 2.背景图和容器一样大，完整显示整个图片 */
+      /* 3.背景图比容器大，从左上角开始不完整的展示背景图 */
+
+      /* 是否平铺 ，默认值是repeat */
+      /* background-repeat: repeat; */
+      /* 不平铺 */
+      background-repeat: no-repeat;
+      /* 水平方向平铺 */
+      /* background-repeat: repeat-x; */
+      /* 垂直方向平铺 */
+      /* background-repeat: repeat-y; */
+
+      /* 1.top bottom left right center */
+      /* background-position: top left; */
+      /* background-position: top right; */
+      /* background-position: top center; */
+      /* 如果第二个值不写 默认是center */
+      /* background-position: top; */
+      /* background-position: center; */
+
+
+      /* 第一个值：正数水平方向往右移动 */
+      /* 第二个值：正数垂直方向往下移动 */
+      background-position: 100px;
+      /* 不写第二个值，就是auto */
+      /* 第一个值：宽度 */
+      /* 第一个值：高度 */
+      /* background-size: 100px; */
+      /* 等比展示，但是只要宽或者高一符合容器，那就会停止 */
+      /* background-size: contain; */
+      /* 等比展示，但是会把整个容器铺满 */
+      background-size: 100px;
+      /* 固定背景，不会沿着滚动滚动背景 */
+      /* background-attachment: fixed; */
+      /* 会沿着滚动滚动背景 */
+      background-attachment: scroll;
+      overflow: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <p style="width: 200px;">
+      等比展示，但是只要宽或者高一符合容器等比展示，但是只要宽或者高一符合容器等比展示，但是只要宽或者高一符合容器等比展示，但是只要宽或者高一符合容器等比展示，但是只要宽或者高一符合容器等比展示，但是只要宽或者高一符合容器等比展示，但是只要宽或者高一符合容器等比展示，但是只要宽或者高一符合容器等比展示，但是只要宽或者高一符合容器等比展示，但是只要宽或者高一符合容器等比展示，但是只要宽或者高一符合容器等比展示，但是只要宽或者高一符合容器等比展示，但是只要宽或者高一符合容器等比展示，但是只要宽或者高一符合容器等比展示，但是只要宽或者高一符合容器等比展示，但是只要宽或者高一符合容器等比展示，但是只要宽或者高一符合容器等比展示，但是只要宽或者高一符合容器
+      等比展示，但是只要宽或者高一符合容器等比展示，但是只要宽或者高一符合容器等比展示，但是只要宽或者高一符合容器等比展示，但是只要宽或者高一符合容器等比展示，但是只要宽或者高一符合容器等比展示，但是只要宽或者高一符合容器等比展示，但是只要宽或者高一符合容器等比展示，但是只要宽或者高一符合容器等比展示，但是只要宽或者高一符合容器等比展示，但是只要宽或者高一符合容器等比展示，但是只要宽或者高一符合容器等比展示，但是只要宽或者高一符合容器等比展示，但是只要宽或者高一符合容器等比展示，但是只要宽或者高一符合容器等比展示，但是只要宽或者高一符合容器等比展示，但是只要宽或者高一符合容器等比展示，但是只要宽或者高一符合容器等比展示，但是只要宽或者高一符合容器
+    </p>
+  </div>
+</body>
+</html>
