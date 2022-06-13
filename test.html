@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         
+
+         /* 动画的代码 */
+        /* .box11 {
+            width: 400px;
+            height: 200px;
+            border: 1px solid pink;
+        }
+
+        .box {
+            width: 40px;
+            height: 20px;
+            background-color: blue;  
+            animation-name:moves;
+            animation-duration: 2s;
+        }
+        
+        @keyframes moves {
+            0% {
+                transform:translateX(0);
+            } 
+            25% {
+               
+                transform: translateX(400px);
+            }
+
+            50%{
+                transform: translate(400px,200px);
+            }
+            75%{
+                transform: translate(0,200px);
+            }
+            100% {
+                transform: translate(0);
+            }
+
+        } */
+        /* .inner {
+          width: 200px;
+          height: 100px;
+          background-color: brown; */
+        /* basis主要成分的意思，当它遇到width的时候,会把width干掉，成为主要成分，width是次要成分 */
+        /* flex-basis: 300px;
+         } */
+
+        /* flex-grow */
+        /*   .inner {
+             flex-basis: 100px;
+             height: 100px;
+             background-color: chartreuse;
+             flex-grow: 1;
+         }
+         .inner1{
+             flex-basis: 200px;
+             height: 100px;
+             background-color: blueviolet;
+             flex-grow: 2;
+         } */
+        /* flex-shirk */
+        /* .inner {
+             flex-basis: 200px;
+             height: 100px;
+             background-color: blue;
+             flex-shrink: 3;
+             transition: all 3s;
+         }
+        .inner1 {
+             flex-basis: 300px;
+             height: 100px;
+             background-color: brown;
+             flex-shrink: 2;
+         } */
+        /* .box:hover .inner { */
+        /* transform: translate(50%,50%); */
+        /* transform: translateX(50%);
+             transform: translateY(50%);
+         } */
+        /* 双开门布局 */
+       /*  .box .first {
+            width: 200px;
+            height: 200px;
+            transition: all 3s;
+        }
+
+        .box .two {
+            width: 200px;
+            height: 200px;
+            transition: all 3s;
+        }
+ */
+        /* .box:hover .first { */
+            /* transform: translateX(-200px); */
+            /* transform: scaleX(200px); */
+        /* } */
+        /* .box:hover .two { */
+            /* transform: translateX(200px); */
+            /* transform: scaleY(200px); */
+            /* transform: rotateZ(360deg); */
+       /*   transform: skewX(120deg);
+         transform-origin: center;
+        } */
+        .box {
+            width: 200px;
+            height: 312px;
+            background-image: url(./Imgage/QQ图片20220611165034.jpg);
+            animation-name: kid;
+            /* animation-duration:linear; */
+            animation: kid 2s steps(9) infinite;
+            margin-left: 1000px;
+            line-height: initial;
+        }
+        @keyframes kid{
+           0%{
+               background-position: 0 0;
+           }
+           100% {
+               background-position: -1800px 0;
+
+           }
+        }
+        .text {
+            width: 200px;
+            height: 200px;
+            /* background-image: linear-gradient(red,green); */
+            /* 从上往下 */
+            background-image: linear-gradient(to top,red,green);
+            /* 从左往右 */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 僵尸的手写 -->
+    <div class="box"></div>
+    <div class="text"></div>
+    <!-- <div class="box11"> -->
+        <!-- <div class="box"></div> -->
+    <!-- </div> -->
+    <!-- <div class="box">
+        <div class="inner"></div>
+        <div class="inner1"></div> -->
+        <!-- <img class="first"
+            src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+            alt="">
+        <img class="two"
+            src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/211bb83776a8e0c8358732c3f3aa2864.png?thumb=1&w=250&h=250&f=webp&q=90"
+            alt=""> -->
+    </div>
+</body>
+
+</html>
